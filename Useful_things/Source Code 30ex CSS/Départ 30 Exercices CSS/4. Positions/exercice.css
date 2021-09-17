@@ -1,0 +1,63 @@
+/* Exercice 1 */
+/* Ouvrez "exercice1.html" sur un navigateur puis changez la position de la nav afin qu'elle suive l'écran au scroll */
+
+nav {
+  width: 100%;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  position: fixed;
+}
+
+/* Exercice 2 */
+/* Ouvrez "exercice2.html" puis trouvez comment parfaitement centrer la div ".square" dans ".box". (sur X et Y). */
+
+.box {
+  position: relative;
+}
+
+.square {
+  background: violet;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Exercice 3 */
+/* Vous devez placer ce qu'on appelle des "boutons flottants".
+C'est à dire des boutons qui vont flotter à un point donné, qui vont tout le temps rester à un seul endroit.
+Placez donc ces quatres boutons en fonction du texte qu'ils contiennent.
+Utilisez un décalage de "15px" à chaque fois, pour qu'ils ne soient pas collés aux bords.
+*/
+
+.floating-btn {
+  margin: 15px;
+  position: absolute;
+}
+.b1 {
+  top: 0;
+  left: 0;
+}
+.b2 {
+  top: 0;
+  right: 0;
+}
+.b3 {
+  bottom: 0;
+  left: 0;
+}
+.b4 {
+  bottom: 0;
+  right: 0;
+}
+
+/* Exercice 4 */
+/* Essayez de décaler la div ".home-content" de 100px depuis le top tout en restant dans le flux du document. */
+
+.home-content {
+  top: 100px;
+  position: relative;
+}

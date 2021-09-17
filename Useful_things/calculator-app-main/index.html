@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Calculator app</title>
+</head>
+<body class="theme-1">
+
+  <main class="big-container">
+    <div class="calculator-container">
+      <section class="calc-themes">
+        <h1>calc</h1>
+        <h2>theme</h2>
+        <div class="themes-container">
+            <div class="theme-numbers">
+              <p class="theme-number-1">1</p>
+              <p class="theme-number-2">2</p>
+              <p class="theme-number-3">3</p>
+            </div>
+            <input type="range" id="RangeFilter" name="points" onchange="filterme(this.value);" min="1" class="rangeActive custom-slider" max="3" value="1">
+        </div>
+      </section>
+      <section class="calc-keypad">
+        <p>0.000</p>
+      </section>
+      <section class="calc-inputs">
+        <div class="keyboard-element">7</div>
+        <div class="keyboard-element">8</div>
+        <div class="keyboard-element">9</div>
+        <div class="keyboard-element delete">del</div>
+        <div class="keyboard-element">4</div>
+        <div class="keyboard-element">5</div>
+        <div class="keyboard-element">6</div>
+        <div class="keyboard-element operator">+</div>
+        <div class="keyboard-element">1</div>
+        <div class="keyboard-element">2</div>
+        <div class="keyboard-element">3</div>
+        <div class="keyboard-element operator">-</div>
+        <div class="keyboard-element operator">.</div>
+        <div class="keyboard-element">0</div>
+        <div class="keyboard-element operator">/</div>
+        <div class="keyboard-element operator">x</div>
+        <div class="keyboard-element delete large-delete">reset</div>
+        <div class="keyboard-element equal">=</div>
+      </section>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="assets/js/calc_constructor.js"></script>
+  <script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>

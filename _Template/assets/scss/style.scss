@@ -1,0 +1,75 @@
+/*Imports*/
+/*@import url();*/
+@import "partial/variables";
+
+/* dart-sass/sass.bat assets/scss:assets/css --watch */
+
+/* ------ GLOBAL ------ */
+*{
+  box-sizing: border-box;
+  &:hover{
+    transition: all 0.2s ease 0s;
+  }
+}
+/* round to 10px */
+html{
+  font-size: 62.5%;
+}
+/* Settings for p tags */
+body{
+  /*font-family*/
+  margin: 0;
+  padding: 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+}
+h2, h3, h4, h5, h6{
+  font-size: var($fs_title_h2);
+}
+img{
+  max-width:100%;
+}
+.container{
+  margin: 0 auto;
+  padding : 0 15px;
+}
+.shadow{
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.btn{
+  background-color: $c_primary;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.6rem;
+  transition-duration: 0.4s;
+  &:hover{
+    border: 2px solid $c_primary;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+}
+
+/* ------ /GLOBAL ------ */
+
+
+/* ------ HEADER ------ */
+/* ------ /HEADER ------ */
+
+/* ------ MAIN ------ */
+/* ------ /MAIN ------ */
+
+/* ------ FOOTER ------ */
+/* ------ /FOOTER ------ */
+
+
+.clear {
+  clear: both;
+}

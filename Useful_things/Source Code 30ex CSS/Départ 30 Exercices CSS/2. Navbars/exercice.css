@@ -1,0 +1,87 @@
+/* Utilisez Flexbox pour résoudre ces problèmes liés aux Navbars. */
+
+/* Nav #1 */
+/* Centrer sur X */
+
+.nav-1{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Nav #2 */
+/* Centrer sur Y et afficher les boutons à droite */
+
+.nav-2{
+    display: flex;
+    align-items: center;
+}
+.sign-in-btn{
+    margin-left: auto;
+}
+.sign-up-btn{
+    margin: 0 10px;
+}
+
+
+/* Nav #3 */
+/* Mettre l'icône à gauche et les liens à droite */
+
+
+.nav-3{
+    display: flex;
+    align-items: center;
+}
+.nav-3 > img{
+    margin-right: auto;
+}
+
+
+/* Nav #4 */
+/* Mettre l'icône Saturne au milieu et les liens à gauche */
+
+.nav-4{
+    display: flex;
+    justify-content: space-between;
+}
+.links-container{
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    width: 30%;
+}
+.logo-link{
+}
+.empty-layout{
+    margin-left: auto;
+    width: 30%;
+}
+
+
+
+
+
+
+
+/* Nav #5 */
+/* Centrer les éléments sur Y */
+/* Mettre les textes au centre sur X */
+/* Afficher la pate de chat à gauche */
+/* Afficher les trois icônes à droite */
+
+.nav-5{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-link2{
+    width: 30%;
+    margin: 0;
+}
+.nav-right{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+

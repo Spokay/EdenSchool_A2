@@ -1,0 +1,89 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    background-color: #F5F1E3;
+}
+#glob-div{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.main-block{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.pendu{
+    width: 30%;
+}
+.pendu > img{
+    width: 100%;
+    height: auto;
+}
+.results{
+    display: flex;
+    margin-top: 30px;
+}
+.keyboard .keyboard-element{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 3px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    border-radius: 4px;
+    box-shadow: 0 3px #3E4C5E;
+}
+.keyboard .keyboard-element:hover{
+    background-color: #DDDBCB;
+    box-shadow: none;
+}
+.results .res-element{
+    width: 55px;
+    height: 55px;
+    border: 1px solid black;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.res-element.fill{
+    background-color: #F25757;
+}
+.results .res-element.found{
+    background-color: #1B9AAA;
+}
+.keyboard .keyboard-element.disabled{
+    background-color: #3E4C5E;
+    transition: background-color 0.5s ease;
+    box-shadow: none;
+}
+.ng-container{
+    margin-top: 30px;
+}
+.new-game{
+    text-decoration: none;
+    font-size: 25px;
+}
+.loser-alert{
+    background-color: #F25757;
+}
+.winner-alert{
+    background-color: #2F9C95;
+}
+.loser-alert, .winner-alert{
+    padding: 10px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.d-none{
+    display: none;
+}
+

@@ -1,0 +1,27 @@
+.btn-gradient{
+    background: linear-gradient(#FFFFFF, #FFFFFF) padding-box, linear-gradient(to right, darkblue, darkorchid) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+}
+
+.btn-gradient{
+       position: relative;
+       display: inline-flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 1rem;
+       color: rgb(121, 121, 124);
+       padding: 12.5px 31.25px;
+       cursor: pointer;
+       transition: color .2s;
+}
+.btn-gradient:hover {
+    color: black;
+}
+
+
+/*   HTML Pour le button
+    <div>
+        <button class="btn-gradient">Button Two</button>
+    </div>
+*/
