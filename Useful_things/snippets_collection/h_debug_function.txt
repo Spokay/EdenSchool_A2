@@ -1,0 +1,5 @@
+function debug($param){
+    echo '<pre style="background-color: lightgray;">';
+    var_dump($param);
+    echo '</pre>';
+}

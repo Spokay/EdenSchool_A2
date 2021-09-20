@@ -84,5 +84,10 @@
   padding: 10px 0;
   font-size: 22px;
 }
+@media (min-width: 662px) {
+  .navigation {
+    display: none;
+  }
+}
 
 /*# sourceMappingURL=burger.css.map */

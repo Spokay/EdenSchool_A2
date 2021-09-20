@@ -19,7 +19,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   padding: 0;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 1.3;
   color: #7D7D7D;
 }
@@ -29,11 +29,13 @@ a, a:hover, a:visited, a:active {
 }
 
 h2, h3, h4, h5, h6 {
-  font-size: var(2.2rem);
+  font-size: 1.6rem;
+  color: #000000;
+  margin: 10px 0;
 }
 
 p {
-  margin: 15px 0;
+  margin: 10px 0;
 }
 
 img {
@@ -72,12 +74,22 @@ img {
   transform: rotate(45deg);
 }
 
+.black {
+  color: #000000;
+  margin: 5px 0;
+}
+
 /* ------ HEADER ------ */
 header {
   width: 100%;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
+}
+@media (min-width: 662px) {
+  header {
+    flex-direction: row;
+  }
 }
 
 .socials {
@@ -98,11 +110,16 @@ header {
 .socials .social-icons {
   display: flex;
   justify-content: space-between;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 .socials .social-icons i {
   color: #000000;
   font-size: 1.3rem;
+}
+@media (min-width: 662px) {
+  .socials {
+    width: 30%;
+  }
 }
 
 .logo-header {
@@ -112,6 +129,12 @@ header {
 .logo-header img {
   width: 100%;
   height: auto;
+}
+@media (min-width: 662px) {
+  .logo-header {
+    width: 40%;
+    margin: 0 75px;
+  }
 }
 
 .login-register {
@@ -140,6 +163,11 @@ header {
   color: #333333;
   border-bottom: 1px solid #333333;
 }
+@media (min-width: 662px) {
+  .login-register {
+    width: 30%;
+  }
+}
 
 /* ------ /HEADER ------ */
 /* ------ MAIN ------ */
@@ -147,7 +175,7 @@ main {
   width: 100%;
 }
 main #main-smaller {
-  margin: 0 15px;
+  margin: 0 10px;
   display: flex;
   flex-direction: column;
 }
@@ -155,9 +183,10 @@ main #main-smaller {
 .top-news {
   display: flex;
   flex-direction: column;
-  margin: 15px 0;
+  margin: 10px 0;
 }
 .top-news article {
+  margin: 10px 0;
   position: relative;
 }
 .top-news article .article-img {
@@ -171,8 +200,44 @@ main #main-smaller {
 .top-news article .article-img .article-text {
   position: absolute;
   bottom: 0;
+  background-color: #FFF;
+  padding: 0 8px;
+  width: 90%;
+  right: 5%;
+  left: 5%;
 }
-.top-news article .article-img .article-text .tag {
+.top-news article .article-img .article-text .share-comments {
+  display: none;
+}
+.top-news article .article-img .article-text .share-comments .fa-share-alt-square {
+  color: #C7C7C7;
+  background-color: #FFF;
+  padding: 2px;
+  font-size: 1.8rem;
+}
+.top-news article .article-img .article-text .share-comments .fa-comments {
+  color: #FFF;
+  background-color: #C7C7C7;
+  border-radius: 3px;
+  padding: 2px;
+}
+.top-news article .article-img .article-text .share-comments .share-comments-button {
+  color: #7D7D7D;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 2px;
+}
+.top-news article .article-img .article-text .share-comments .share-comments-button span {
+  margin: 0 2px;
+}
+@media (min-width: 400px) {
+  .top-news article .article-img .article-text .share-comments {
+    display: flex;
+  }
+}
+.top-news .top1 .tag {
   background-color: #F72300;
   display: flex;
   justify-content: center;
@@ -182,11 +247,60 @@ main #main-smaller {
   z-index: 2;
   color: #FFFFFF;
   text-transform: uppercase;
+  margin-top: -36px;
+}
+.top-news .top2 .tag {
+  background-color: #5F35AC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  position: absolute;
+  z-index: 2;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: -36px;
+}
+.top-news .top3 .tag {
+  background-color: #2196F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  position: absolute;
+  z-index: 2;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin-top: -36px;
 }
 
+/* ------ CATEGORIES ------ */
+.category {
+  display: flex;
+}
+.category .category-title {
+  width: 30%;
+}
+.category .half-line {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #F4F4F4;
+  height: 3px;
+  border-left: 4em solid #5F35AC;
+}
+
+/* ------ /CATEGORIES ------ */
 /* ------ /MAIN ------ */
 /* ------ FOOTER ------ */
 /* ------ /FOOTER ------ */
+/* ------ MEDIA QUERIES ------ */
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+/* Small devices (landscape phones, 576px and up) */
+/* Medium devices (tablets, 768px and up) */
+/* Large devices (desktops, 992px and up) */
+/* X-Large devices (large desktops, 1200px and up) */
+/* XX-Large devices (larger desktops, 1400px and up) */
 .clear {
   clear: both;
 }
