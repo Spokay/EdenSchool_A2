@@ -265,6 +265,7 @@ main{
 /* ------ CATEGORIES ------ */
 .category{
   display: flex;
+  align-items: center;
   .category-title{
     width: 30%;
   }
@@ -274,6 +275,11 @@ main{
 }
 /* ------ /CATEGORIES ------ */
 
+/* ------ SECTIONS ------ */
+.big-section{
+  display: flex;
+}
+/* ------ /SECTIONS ------ */
 /* ------ /MAIN ------ */
 
 /* ------ FOOTER ------ */
