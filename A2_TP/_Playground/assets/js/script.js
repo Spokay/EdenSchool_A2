@@ -66,7 +66,7 @@ else{
     console.log('battu');
 }*/
 
-let jour = parseInt(prompt('jour'));
+/*let jour = parseInt(prompt('jour'));
 let mois = parseInt(prompt('mois'));
 let annee = parseInt(prompt('année'));
 
@@ -93,4 +93,6 @@ else{
             console.log('la date n\'est pas valide');
         }
     }
-}
+}*/
+
+

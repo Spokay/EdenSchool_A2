@@ -28,48 +28,19 @@
                 <i class="fas fa-wifi"></i>
             </div>
         </div>
-        <!--<nav class="navigation">
-            <button class="burger-toggler"><i class="fas fa-bars"></i></button>
-            <ul class="hidden-nav">
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-            </ul>
-        </nav>-->
-        <!--    Made by Erik Terwan    -->
-        <!--   24th of November 2015   -->
-        <!--        MIT License        -->
+        <!-- Navigation-->
         <nav class="navigation">
-            <div id="menuToggle">
-                <!--
-                A fake / hidden checkbox is used as click reciever,
-                so you can use the :checked selector on it.
-                -->
-                <input type="checkbox" />
-
-                <!--
-                Some spans to act as a hamburger.
-
-                They are acting like a real hamburger,
-                not that McDonalds stuff.
-                -->
-                <span></span>
-                <span></span>
-                <span></span>
-                <!--
-                Too bad the menu has to be inside of the button
-                but hey, it's pure CSS magic.
-                -->
-                <ul id="menu">
-                    <a href="#"><li>Home</li></a>
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Info</li></a>
-                    <a href="#"><li>Contact</li></a>
-                    <a href="#" target="_blank">Test</a>
-                </ul>
-            </div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="#">News</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">Tablet</a></li>
+                <li><a href="#">Gadgets</a></li>
+            </ul>
         </nav>
+        <!-- /Navigation -->
+
         <div class="logo-header">
             <img src="assets/img/logo-omega_200x200.png" alt="omega news logo">
         </div>
@@ -79,6 +50,12 @@
                 <option value="1">EN</option>
                 <option value="2">FR</option>
             </select>
+            <div class="search-container">
+                <label for="search-box">
+                    <input maxlength="15" type="search" id="search-box" placeholder="search">
+                    <i class="fas fa-search"></i>
+                </label>
+            </div>
         </div>
     </header>
 <!-- /header -->
@@ -157,231 +134,1000 @@
             </section>
             <!-- /trending -->
 
-            <!-- category mobile-->
-            <section class="category-mobile">
-                <div class="category">
-                    <div class="category-title">
-                        <h2>Mobile</h2>
-                    </div>
-                    <div class="half-line">
+            <div class="global-container">
+                <section class="categories-container">
+                    <!-- category mobile-->
+                    <section class="category-mobile">
+                        <div class="category">
+                            <div class="category-title">
+                                <h2>Mobile</h2>
+                            </div>
+                            <div class="half-line">
 
-                    </div>
-                </div>
-                <!-- section 1 -->
-                <section class="section-1 big-section">
-                    <article>
-                        <div class="article-img">
-                            <img src="assets/img/cat-mobi-left-1.jpg" alt="inside of a building">
-                            <div class="article-text-cat">
-                                <aside class="tag">
-                                    <p>Mobile</p>
-                                </aside>
-                                <h3>Chevrolet car-saving technology delivers</h3>
-                                <p class="black">Stive Clark, Aug 4, 2015</p>
-                                <p>In a move to address mounting concerns about security on Android, Google adn Samsung are nom issuing.</p>
-                                <div class="share-comments">
-                                    <a href="#" class="share-comments-button">
-                                        <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
-                                    </a>
-                                    <a href="#" class="share-comments-button">
-                                        <i class="far fa-comments"></i><span class="black">4</span> Comments
-                                    </a>
-                                </div>
                             </div>
                         </div>
-                    </article>
-                </section>
-                <!-- /section 1 -->
-
-                <!-- section 2 -->
-                <section class="section-2 small-section">
-                    <article>
-                        <div class="article-img">
-                            <div>
-                                <img src="assets/img/cat-mobi-sm1.jpg" alt="a watch">
-                            </div>
-                            <div class="article-text-cat">
-                                <aside class="tag">
-                                    <p>Mobile</p>
-                                </aside>
-                                <h3>Chevrolet car-saving technology delivers</h3>
-                                <p class="black">Stive Clark, Aug 4, 2015</p>
-                                <div class="share-comments">
-                                    <a href="#" class="share-comments-button">
-                                        <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
-                                    </a>
-                                    <a href="#" class="share-comments-button">
-                                        <i class="far fa-comments"></i><span class="black">4</span> Comments
-                                    </a>
+                        <!-- section 1 -->
+                        <section class="section-1 big-section">
+                            <article>
+                                <div class="article-img">
+                                    <img src="assets/img/cat-mobi-left-1.jpg" alt="inside of a building">
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Mobile</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <p>In a move to address mounting concerns about security on Android, Google adn Samsung are nom issuing.</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
+                            </article>
+                        </section>
+                        <!-- /section 1 -->
+
+                        <!-- section 2 -->
+                        <section class="section-2 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/cat-mobi-sm1.jpg" alt="a watch">
+                                    </div>
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Mobile</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 2 -->
+
+                        <!-- section 3 -->
+                        <section class="section-3 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/cat-mobi-sm2.jpg" alt="a watch">
+                                    </div>
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Mobile</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 3 -->
+
+                        <!-- section 4 -->
+                        <section class="section-4 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/cat-mobi-sm3.jpg" alt="a watch">
+                                    </div>
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Mobile</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 4 -->
+
+                        <!-- section 5 -->
+                        <section class="section-5 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/cat-mobi-sm4.jpg" alt="a watch">
+                                    </div>
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Mobile</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 5 -->
+
+                        <div class="full-line-container">
+                            <div class="full-line">
+
+                            </div>
+                            <div class="more-news">
+                                <a href="#" class="black">more news <i class="fas fa-angle-double-right"></i></a>
                             </div>
                         </div>
-                    </article>
-                </section>
-                <!-- /section 2 -->
+                    </section>
+                    <!-- /category mobile-->
 
-                <!-- section 3 -->
-                <section class="section-3 small-section">
-                    <article>
-                        <div class="article-img">
-                            <div>
-                                <img src="assets/img/cat-mobi-sm2.jpg" alt="a watch">
+                    <!-- category tablets -->
+                    <section class="category-tablet">
+                        <div class="category">
+                            <div class="category-title">
+                                <h2>Tablet</h2>
                             </div>
-                            <div class="article-text-cat">
-                                <aside class="tag">
-                                    <p>Mobile</p>
-                                </aside>
-                                <h3>Chevrolet car-saving technology delivers</h3>
-                                <p class="black">Stive Clark, Aug 4, 2015</p>
-                                <div class="share-comments">
-                                    <a href="#" class="share-comments-button">
-                                        <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
-                                    </a>
-                                    <a href="#" class="share-comments-button">
-                                        <i class="far fa-comments"></i><span class="black">4</span> Comments
-                                    </a>
-                                </div>
+                            <div class="half-line">
+
                             </div>
                         </div>
-                    </article>
-                </section>
-                <!-- /section 3 -->
-
-                <!-- section 4 -->
-                <section class="section-4 small-section">
-                    <article>
-                        <div class="article-img">
-                            <div>
-                                <img src="assets/img/cat-mobi-sm3.jpg" alt="a watch">
-                            </div>
-                            <div class="article-text-cat">
-                                <aside class="tag">
-                                    <p>Mobile</p>
-                                </aside>
-                                <h3>Chevrolet car-saving technology delivers</h3>
-                                <p class="black">Stive Clark, Aug 4, 2015</p>
-                                <div class="share-comments">
-                                    <a href="#" class="share-comments-button">
-                                        <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
-                                    </a>
-                                    <a href="#" class="share-comments-button">
-                                        <i class="far fa-comments"></i><span class="black">4</span> Comments
-                                    </a>
+                        <!-- section 1 -->
+                        <section class="section-1 big-section">
+                            <article>
+                                <div class="article-img">
+                                    <img src="assets/img/tab_top1.jpg" alt="tablet on a desktop">
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Tablet</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <p>In a move to address mounting concerns about security on Android, Google adn Samsung are nom issuing.</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
+                            </article>
+                        </section>
+                        <!-- /section 1 -->
+
+                        <!-- section 2 -->
+                        <section class="section-2 big-section">
+                            <article>
+                                <div class="article-img">
+                                    <img src="assets/img/tab_top2.jpg" alt="statistics">
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Tablet</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <p>In a move to address mounting concerns about security on Android, Google adn Samsung are nom issuing.</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 2 -->
+                        <div class="full-line-container">
+                            <div class="full-line">
+
+                            </div>
+                            <div class="more-news">
+                                <a href="#" class="black">more news <i class="fas fa-angle-double-right"></i></a>
                             </div>
                         </div>
-                    </article>
-                </section>
-                <!-- /section 4 -->
+                    </section>
+                    <!-- /category tablets -->
 
-                <!-- section 5 -->
-                <section class="section-5 small-section">
-                    <article>
-                        <div class="article-img">
-                            <div>
-                                <img src="assets/img/cat-mobi-sm4.jpg" alt="a watch">
+                    <!-- category gadgets -->
+                    <section class="category-gadgets">
+                        <div class="category">
+                            <div class="category-title">
+                                <h2>Gadgets</h2>
                             </div>
-                            <div class="article-text-cat">
-                                <aside class="tag">
-                                    <p>Mobile</p>
-                                </aside>
-                                <h3>Chevrolet car-saving technology delivers</h3>
-                                <p class="black">Stive Clark, Aug 4, 2015</p>
-                                <div class="share-comments">
-                                    <a href="#" class="share-comments-button">
-                                        <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
-                                    </a>
-                                    <a href="#" class="share-comments-button">
-                                        <i class="far fa-comments"></i><span class="black">4</span> Comments
-                                    </a>
-                                </div>
+                            <div class="half-line">
+
                             </div>
                         </div>
-                    </article>
-                </section>
-                <!-- /section 5 -->
-            </section>
-            <div class="full-line-container">
-                <div class="full-line">
+                        <!-- section 1 -->
+                        <section class="section-1 big-section">
+                            <article>
+                                <div class="article-img">
+                                    <img src="assets/img/gad_top1.jpg" alt="drone flying">
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Gadgets</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <p>In a move to address mounting concerns about security on Android, Google adn Samsung are nom issuing.</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 1 -->
 
-                </div>
-                <div class="more-news">
-                    <a href="#" class="black">more news <i class="fas fa-angle-double-right"></i></a>
-                </div>
+                        <!-- section 2 -->
+                        <section class="section-2 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/pop_right3.jpg" alt="a watch">
+                                    </div>
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Gadgets</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 2 -->
+
+                        <!-- section 3 -->
+                        <section class="section-3 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/cat-mobi-sm3.jpg" alt="a watch">
+                                    </div>
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Gadgets</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 3 -->
+
+                        <!-- section 4 -->
+                        <section class="section-4 big-section">
+                            <article>
+                                <div class="article-img">
+                                    <img src="assets/img/gad_top2.jpg" alt="phone">
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Gadgets</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <p>In a move to address mounting concerns about security on Android, Google adn Samsung are nom issuing.</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 4 -->
+
+                        <div class="full-line-container">
+                            <div class="full-line">
+
+                            </div>
+                            <div class="more-news">
+                                <a href="#" class="black">more news <i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /category gadgets -->
+
+                    <!-- category camera -->
+                    <section class="category-camera">
+                        <div class="category">
+                            <div class="category-title">
+                                <h2>Camera</h2>
+                            </div>
+                            <div class="half-line">
+
+                            </div>
+                        </div>
+                        <!-- section 1 -->
+                        <section class="section-1 big-section">
+                            <article>
+                                <div class="article-img">
+                                    <img src="assets/img/cam_left1.jpg" alt="tablet on a desktop">
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Camera</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <p>In a move to address mounting concerns about security on Android, Google adn Samsung are nom issuing.</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 1 -->
+
+                        <!-- section 2 -->
+                        <section class="section-2 big-section">
+                            <article>
+                                <div class="article-img">
+                                    <img src="assets/img/cam_left2.jpg" alt="statistics">
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Camera</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <p>In a move to address mounting concerns about security on Android, Google adn Samsung are nom issuing.</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 2 -->
+
+                        <!-- section 3 -->
+                        <section class="section-3 big-section">
+                            <article>
+                                <div class="article-img">
+                                    <img src="assets/img/cam_left3.jpg" alt="statistics">
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Camera</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <p>In a move to address mounting concerns about security on Android, Google adn Samsung are nom issuing.</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 3 -->
+                        <div class="full-line-container">
+                            <div class="full-line">
+
+                            </div>
+                            <div class="more-news">
+                                <a href="#" class="black">more news <i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /category camera -->
+
+                    <!-- category design -->
+                    <section class="category-design">
+                        <div class="category">
+                            <div class="category-title">
+                                <h2>Design</h2>
+                            </div>
+                            <div class="half-line">
+
+                            </div>
+                        </div>
+                        <!-- section 1 -->
+                        <section class="section-1 big-section">
+                            <article>
+                                <div class="article-img">
+                                    <img src="assets/img/design_top1.jpg" alt="tablet on a desktop">
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Design</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <p>In a move to address mounting concerns about security on Android, Google adn Samsung are nom issuing.</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 1 -->
+
+                        <!-- section 2 -->
+                        <section class="section-2 big-section">
+                            <article>
+                                <div class="article-img">
+                                    <img src="assets/img/design_top2.jpg" alt="statistics">
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Design</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <p>In a move to address mounting concerns about security on Android, Google adn Samsung are nom issuing.</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 2 -->
+
+                        <!-- section 1 -->
+                        <section class="section-3 big-section">
+                            <article>
+                                <div class="article-img">
+                                    <img src="assets/img/design_top3.jpg" alt="tablet on a desktop">
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Design</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <p>In a move to address mounting concerns about security on Android, Google adn Samsung are nom issuing.</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 3 -->
+
+                        <!-- section 1 -->
+                        <section class="section-4 big-section">
+                            <article>
+                                <div class="article-img">
+                                    <img src="assets/img/design_top4.jpg" alt="tablet on a desktop">
+                                    <div class="article-text-cat">
+                                        <aside class="tag">
+                                            <p>Design</p>
+                                        </aside>
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <p>In a move to address mounting concerns about security on Android, Google adn Samsung are nom issuing.</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 4 -->
+                        <div class="full-line-container">
+                            <div class="full-line">
+
+                            </div>
+                            <div class="more-news">
+                                <a href="#" class="black">more news <i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /category design -->
+                </section>
+                <section class="popular-news-container">
+                    <section class="popular">
+                        <div class="category">
+                            <div class="category-title">
+                                <h2>Popular News</h2>
+                            </div>
+                            <div class="half-line">
+
+                            </div>
+                        </div>
+
+                        <!-- section 1 -->
+                        <section class="section-1 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/pop_right1.jpg" alt="">
+                                    </div>
+                                    <div class="article-text-cat">
+
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 1 -->
+
+                        <!-- section 2 -->
+                        <section class="section-2 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/pop_right2.jpg" alt="">
+                                    </div>
+                                    <div class="article-text-cat">
+
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 2 -->
+
+                        <!-- section 3 -->
+                        <section class="section-3 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/pop_right3.jpg" alt="a watch">
+                                    </div>
+                                    <div class="article-text-cat">
+
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 3 -->
+
+                        <!-- section 4 -->
+                        <section class="section-4 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/pop_right4.jpg" alt="">
+                                    </div>
+                                    <div class="article-text-cat">
+
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
+                                            </a>
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 4 -->
+
+                        <div class="full-line-container">
+                            <div class="full-line">
+
+                            </div>
+                            <div class="more-news">
+                                <a href="#" class="black">more news <i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- ad container -->
+                        <div class="adds-container add-100">
+                            <img src="assets/img/right_add6.jpg" alt="ad">
+                        </div>
+                        <!-- /ad container -->
+                    </section>
+
+                    <section class="reviews">
+                        <div class="category">
+                            <div class="category-title">
+                                <h2>Reviews</h2>
+                            </div>
+                            <div class="half-line">
+
+                            </div>
+                        </div>
+
+                        <!-- section 1 -->
+                        <section class="section-1 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/pop_right1.jpg" alt="">
+                                    </div>
+                                    <div class="article-text-cat">
+
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <div class="stars-container">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 1 -->
+
+                        <!-- section 2 -->
+                        <section class="section-2 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/pop_right2.jpg" alt="">
+                                    </div>
+                                    <div class="article-text-cat">
+
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <div class="stars-container">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 2 -->
+
+                        <!-- section 3 -->
+                        <section class="section-3 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/pop_right3.jpg" alt="a watch">
+                                    </div>
+                                    <div class="article-text-cat">
+
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <div class="stars-container">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 3 -->
+
+                        <!-- section 4 -->
+                        <section class="section-4 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/pop_right4.jpg" alt="">
+                                    </div>
+                                    <div class="article-text-cat">
+
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <div class="stars-container">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 4 -->
+
+                        <div class="full-line-container">
+                            <div class="full-line">
+
+                            </div>
+                            <div class="more-news">
+                                <a href="#" class="black">more news <i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <section class="most-comments">
+                        <div class="category">
+                            <div class="category-title">
+                                <h2>Most Commented</h2>
+                            </div>
+                            <div class="half-line">
+
+                            </div>
+                        </div>
+
+                        <!-- section 1 -->
+                        <section class="section-1 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/pop_right1.jpg" alt="">
+                                    </div>
+                                    <div class="article-text-cat">
+
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 1 -->
+
+                        <!-- section 2 -->
+                        <section class="section-2 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/pop_right2.jpg" alt="">
+                                    </div>
+                                    <div class="article-text-cat">
+
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 2 -->
+
+                        <!-- section 3 -->
+                        <section class="section-3 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/pop_right3.jpg" alt="a watch">
+                                    </div>
+                                    <div class="article-text-cat">
+
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 3 -->
+
+                        <!-- section 4 -->
+                        <section class="section-4 small-section">
+                            <article>
+                                <div class="article-img">
+                                    <div>
+                                        <img src="assets/img/pop_right4.jpg" alt="">
+                                    </div>
+                                    <div class="article-text-cat">
+
+                                        <h3>Chevrolet car-saving technology delivers</h3>
+                                        <p class="black">Stive Clark, Aug 4, 2015</p>
+                                        <div class="share-comments">
+                                            <a href="#" class="share-comments-button">
+                                                <i class="far fa-comments"></i><span class="black">4</span> Comments
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </section>
+                        <!-- /section 4 -->
+
+                        <div class="full-line-container">
+                            <div class="full-line">
+
+                            </div>
+                            <div class="more-news">
+                                <a href="#" class="black">more news <i class="fas fa-angle-double-right"></i></a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="editor-corner">
+                        <div class="category">
+                            <div class="category-title">
+                                <h2>Editor Corner</h2>
+                            </div>
+                            <div class="half-line">
+
+                            </div>
+                        </div>
+
+                        <!-- section 1 -->
+                        <section class="section-1 readers-article">
+                            <div class="img-floating">
+                                <p>
+                                    <img src="assets/img/reader_img2.jpg" alt="men's face">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores doloribus in incidunt ipsum iure labore nemo nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate dolorum enim est eveniet fugiat maxime nesciunt possimus quas tempora. Assumenda eos fuga nihil perferendis provident quasi reprehenderit..</p>
+                            </div>
+                            <input type="submit" value="Read More" class="btn">
+                            <!-- ad container -->
+                            <div class="adds-container add-25">
+                                <img src="assets/img/right_add7.jpg" alt="ad">
+                                <img src="assets/img/right_add7.jpg" alt="ad">
+                                <img src="assets/img/right_add7.jpg" alt="ad">
+                                <img src="assets/img/right_add7.jpg" alt="ad">
+                            </div>
+                            <!-- /ad container -->
+                        </section>
+                        <!-- /section 1 -->
+                    </section>
+
+                    <section class="reader-corner">
+                        <div class="category">
+                            <div class="category-title">
+                                <h2>Readers Corner</h2>
+                            </div>
+                            <div class="half-line">
+
+                            </div>
+                        </div>
+
+                        <!-- section 1 -->
+                        <section class="section-1 readers-article">
+                            <div class="img-floating">
+                                <p>
+                                    <img src="assets/img/reader.jpg" alt="men's face">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores doloribus in incidunt ipsum iure labore nemo nihil. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At cupiditate dolorum enim est eveniet fugiat maxime nesciunt possimus quas tempora. Assumenda eos fuga nihil perferendis provident quasi reprehenderit..</p>
+                            </div>
+                            <input type="submit" value="Read More" class="btn">
+                            <!-- ad container -->
+                            <div class="adds-container add-100">
+                                <img src="assets/img/podcast.jpg" alt="ad">
+                            </div>
+                            <!-- /ad container -->
+                        </section>
+                        <!-- /section 1 -->
+                    </section>
+                </section>
+                <section class="videos">
+
+                </section>
+                <section class="sign-up">
+                    <h3><span>sign up</span> for the latest news</h3>
+                    <form method="post" id="sign-up-form">
+                        <input type="text">
+                        <input type="submit" value="SIGN UP" class="btn">
+                    </form>
+                </section>
             </div>
-            <!-- /category mobile-->
-
-            <!-- category tablets -->
-            <section class="category-tablet">
-                <div class="category">
-                    <div class="category-title">
-                        <h2>Mobile</h2>
-                    </div>
-                    <div class="half-line">
-
-                    </div>
-                </div>
-                <!-- section 1 -->
-                <section class="section-1 big-section">
-                    <article>
-                        <div class="article-img">
-                            <img src="assets/img/tab_top1.jpg" alt="tablet on a desktop">
-                            <div class="article-text-cat">
-                                <aside class="tag">
-                                    <p>Mobile</p>
-                                </aside>
-                                <h3>Chevrolet car-saving technology delivers</h3>
-                                <p class="black">Stive Clark, Aug 4, 2015</p>
-                                <p>In a move to address mounting concerns about security on Android, Google adn Samsung are nom issuing.</p>
-                                <div class="share-comments">
-                                    <a href="#" class="share-comments-button">
-                                        <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
-                                    </a>
-                                    <a href="#" class="share-comments-button">
-                                        <i class="far fa-comments"></i><span class="black">4</span> Comments
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </section>
-                <!-- /section 1 -->
-
-                <!-- section 2 -->
-                <section class="section-1 big-section">
-                    <article>
-                        <div class="article-img">
-                            <img src="assets/img/tab_top2.jpg" alt="statistics">
-                            <div class="article-text-cat">
-                                <aside class="tag">
-                                    <p>Mobile</p>
-                                </aside>
-                                <h3>Chevrolet car-saving technology delivers</h3>
-                                <p class="black">Stive Clark, Aug 4, 2015</p>
-                                <p>In a move to address mounting concerns about security on Android, Google adn Samsung are nom issuing.</p>
-                                <div class="share-comments">
-                                    <a href="#" class="share-comments-button">
-                                        <i class="fas fa-share-alt-square"></i><span class="black">424</span> Shares
-                                    </a>
-                                    <a href="#" class="share-comments-button">
-                                        <i class="far fa-comments"></i><span class="black">4</span> Comments
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </section>
-                <!-- /section 2 -->
-                <div class="full-line-container">
-                    <div class="full-line">
-
-                    </div>
-                    <div class="more-news">
-                        <a href="#" class="black">more news <i class="fas fa-angle-double-right"></i></a>
-                    </div>
-                </div>
-            </section>
-            <!-- /category tablets -->
         </div>
     </main>
 <!-- /main -->
